@@ -24,8 +24,8 @@ if(CUDA_FOUND)
   # about this compiler argument
   set(CUDA_NVCC_FLAGS "
   -ccbin /usr/bin/g++-6; 
-  -gencode;arch=compute_35,code=sm_35;
-  -gencode;arch=compute_35,code=compute_35;")
+  -gencode;arch=compute_61,code=sm_61;")
+  # -gencode;arch=compute_35,code=compute_35;")
 
   # add -Wextra compiler flag for gcc compilations
   if (UNIX)
